@@ -1,9 +1,4 @@
-import {
-  Component,
-  OnInit,
-  ChangeDetectorRef,
-  ViewChild,
-} from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { BaseChartDirective } from 'ng2-charts';
@@ -18,13 +13,25 @@ import {
   Tooltip,
   ChartConfiguration,
 } from 'chart.js';
-import { DashboardDataService, DashboardMetric, SalesData } from '../services/dashboard-data.service';
+import {
+  DashboardDataService,
+  DashboardMetric,
+  SalesData,
+} from '../services/dashboard-data.service';
 import { DashboardMetrics } from './components/dashboard-metrics/dashboard-metrics';
 import { SalesChart } from './components/sales-chart/sales-chart';
 import { DealsTable } from './components/deals-table/deals-table';
 import { Month } from './dashboard.constants';
 
-Chart.register(CategoryScale, LinearScale, PointElement, LineElement, LineController, Filler, Tooltip);
+Chart.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  LineController,
+  Filler,
+  Tooltip,
+);
 
 @Component({
   selector: 'app-dashboard',
@@ -97,7 +104,7 @@ export class Dashboard implements OnInit {
   constructor(
     private dataService: DashboardDataService,
     private router: Router,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
   ) {}
 
   ngOnInit(): void {
@@ -153,12 +160,12 @@ export class Dashboard implements OnInit {
 
   onMonthChange(month: string): void {
     this.selectedMonth = month as Month;
-    const seed = month.length; 
-    const newData = this.baseChartData.map(v => {
+    const seed = month.length;
+    const newData = this.baseChartData.map((v) => {
       const variation = (Math.random() - 0.5) * 20;
       return Math.max(0, Math.min(100, v + variation));
     });
-    
+
     const currentLabels = this.lineChartData.labels as string[];
     this.buildChart(currentLabels, newData);
   }

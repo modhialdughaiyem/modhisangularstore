@@ -18,9 +18,6 @@
       (monthChange)="onMonthChange($event)"
     ></app-sales-chart>
 
-    <app-deals-table
-      [salesData]="salesData"
-      (rowClick)="navigateToOrders()"
-    ></app-deals-table>
+    <app-deals-table [salesData]="salesData" (rowClick)="navigateToOrders()"></app-deals-table>
   }
 </div>

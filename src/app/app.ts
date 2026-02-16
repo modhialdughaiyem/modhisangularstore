@@ -8,7 +8,7 @@ import { Header } from './shared/components/header/header';
   selector: 'app-root',
   imports: [RouterOutlet, CommonModule, Sidebar, Header],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
   sidebarOpen = false;
