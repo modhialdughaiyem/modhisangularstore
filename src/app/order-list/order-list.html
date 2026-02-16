@@ -1,0 +1,78 @@
+<div class="order-list-container">
+  <h1 class="page-title">Order Lists</h1>
+
+  <div class="filter-bar">
+    <div class="filter-icon">
+      <img src="assets/icons/filter.svg" alt="Filter" />
+    </div>
+    <span class="filter-label">Filter By</span>
+
+    <select class="filter-select">
+      <option value="">Date</option>
+      <option>Last 7 days</option>
+      <option>Last 30 days</option>
+      <option>Last 90 days</option>
+    </select>
+
+    <select class="filter-select" (change)="onFilterType($event)" [value]="filterType">
+      <option value="">Order Type</option>
+      @for (type of orderTypes; track type) {
+        <option [value]="type">{{ type }}</option>
+      }
+    </select>
+
+    <select class="filter-select" (change)="onFilterStatus($event)" [value]="filterStatus">
+      <option value="">Order Status</option>
+      @for (status of orderStatuses; track status) {
+        <option [value]="status">{{ status }}</option>
+      }
+    </select>
+
+    <button class="reset-btn" (click)="resetFilters()">
+      <img src="assets/icons/reset.svg" alt="Reset" />
+      Reset Filter
+    </button>
+  </div>
+
+  <div class="table-card">
+    <div class="table-wrapper">
+      <table class="order-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>ADDRESS</th>
+            <th>DATE</th>
+            <th>TYPE</th>
+            <th>STATUS</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (order of filteredOrders; track order.id) {
+            <tr>
+              <td class="order-id">{{ order.id }}</td>
+              <td>{{ order.name }}</td>
+              <td>{{ order.address }}</td>
+              <td>{{ order.date }}</td>
+              <td>{{ order.type }}</td>
+              <td>
+                <span class="status-badge" [class]="'status-' + order.status.toLowerCase().replace(' ', '-')">
+                  {{ order.status }}
+                </span>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <app-pagination
+      [currentPage]="currentPage"
+      [totalItems]="totalItems"
+      [showingStart]="getShowingStart()"
+      [showingEnd]="getShowingEnd()"
+      (prev)="prevPage()"
+      (next)="nextPage()"
+    ></app-pagination>
+  </div>
+</div>

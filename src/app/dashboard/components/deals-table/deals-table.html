@@ -1,0 +1,47 @@
+<section class="table-section">
+  <div class="section-header">
+    <h2 class="section-title">Deals Details</h2>
+    <select class="month-select">
+      @for (month of months; track month) {
+        <option [value]="month">{{ month }}</option>
+      }
+    </select>
+  </div>
+  <div class="table-wrapper">
+    <table class="deals-table">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Location</th>
+          <th>Date - Time</th>
+          <th>Piece</th>
+          <th>Amount</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (row of salesData; track row.id) {
+          <tr (click)="onRowClick()" class="clickable-row">
+            <td>
+              <div class="product-cell">
+                <div class="product-thumb">
+                  <img src="assets/product-generic.svg" alt="Product" />
+                </div>
+                <span>{{ row.product }}</span>
+              </div>
+            </td>
+            <td>{{ row.location }}</td>
+            <td>{{ row.dateTime }}</td>
+            <td>{{ row.piece }}</td>
+            <td>{{ formatCurrency(row.revenue) }}</td>
+            <td>
+              <span class="status-badge" [class]="'status-' + row.status.toLowerCase()">
+                {{ row.status }}
+              </span>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</section>

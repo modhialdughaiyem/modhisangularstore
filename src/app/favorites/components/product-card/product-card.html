@@ -1,0 +1,31 @@
+<div class="product-card">
+  <div class="product-image-wrapper">
+    <button class="carousel-btn prev" (click)="onPrevImage($event)">
+      <img src="assets/arrow-left.svg" alt="Previous" />
+    </button>
+    <img [src]="product.images[product.currentImageIndex]" [alt]="product.name" class="product-image" />
+    <button class="carousel-btn next" (click)="onNextImage($event)">
+      <img src="assets/arrow-right.svg" alt="Next" />
+    </button>
+  </div>
+
+  <div class="product-info">
+    <div class="product-name-row">
+      <h3 class="product-name">{{ product.name }}</h3>
+      <button class="favorite-btn" [class.active]="product.isFavorite" (click)="onToggleFavorite($event)">
+        <img [src]="product.isFavorite ? 'assets/heart-filled.svg' : 'assets/heart-outline.svg'" alt="Favorite" />
+      </button>
+    </div>
+
+    <span class="product-price">${{ product.price.toFixed(2) }}</span>
+
+    <div class="product-rating">
+      @for (star of getStars(product.rating); track $index) {
+        <img [src]="star === 'full' ? 'assets/star-full.svg' : star === 'half' ? 'assets/star-half.svg' : 'assets/star-empty.svg'" alt="Star" class="star" />
+      }
+      <span class="review-count">({{ product.reviews }})</span>
+    </div>
+
+    <button class="edit-btn">Edit Product</button>
+  </div>
+</div>

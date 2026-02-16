@@ -1,0 +1,38 @@
+<section class="dashboard-metrics-grid">
+  @for (metric of metrics; track metric.id) {
+    <div class="dashboard-metric-card">
+      <div class="metric-top">
+        <div class="metric-info">
+          <p class="metric-label">{{ metric.name }}</p>
+          <h3 class="metric-value">{{ formatValue(metric) }}</h3>
+        </div>
+        <div class="metric-icon" [style.background]="getIconBg(metric.category)">
+          @switch (metric.category) {
+            @case ('users') {
+              <img src="assets/users-metric.svg" alt="Users" />
+            }
+            @case ('orders') {
+              <img src="assets/orders-metric.svg" alt="Orders" />
+            }
+            @case ('sales') {
+              <img src="assets/sales-metric.svg" alt="Sales" />
+            }
+            @case ('pending') {
+              <img src="assets/pending-metric.svg" alt="Pending" />
+            }
+          }
+        </div>
+      </div>
+      <div class="metric-footer">
+        <span class="metric-change" [class.increase]="metric.changeType === 'increase'" [class.decrease]="metric.changeType === 'decrease'">
+          @if (metric.changeType === 'increase') {
+            <img src="assets/trend-up.svg" alt="Up" />
+          } @else {
+            <img src="assets/trend-down.svg" alt="Down" />
+          }
+          {{ metric.change }}% <span class="change-label">{{ metric.changeLabel }}</span>
+        </span>
+      </div>
+    </div>
+  }
+</section>

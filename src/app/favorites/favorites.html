@@ -1,0 +1,14 @@
+<div class="favorites-container">
+  <h1 class="page-title">Favorites</h1>
+
+  <div class="products-grid">
+    @for (product of products; track product.id) {
+      <app-product-card
+        [product]="product"
+        (prevImage)="prevImage($event)"
+        (nextImage)="nextImage($event)"
+        (toggleFavorite)="toggleFavorite($event)"
+      ></app-product-card>
+    }
+  </div>
+</div>

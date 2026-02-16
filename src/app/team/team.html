@@ -1,0 +1,12 @@
+<div class="team-container">
+  <div class="team-header">
+    <h1 class="page-title">Team</h1>
+    <a routerLink="/add-team-member" class="add-member-btn">Add New Member</a>
+  </div>
+
+  <div class="team-grid">
+    @for (member of members; track member.email) {
+      <app-member-card [member]="member"></app-member-card>
+    }
+  </div>
+</div>

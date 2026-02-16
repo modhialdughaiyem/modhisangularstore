@@ -1,0 +1,11 @@
+<div class="pagination">
+  <span class="showing-text">Showing {{ showingStart }}-{{ showingEnd < 10 ? '0' + showingEnd : showingEnd }} of {{ totalItems }}</span>
+  <div class="page-controls">
+    <button class="page-btn" (click)="onPrev()" [disabled]="currentPage === 1">
+      <img src="assets/arrow-left.svg" alt="Previous" />
+    </button>
+    <button class="page-btn" (click)="onNext()" [disabled]="showingEnd >= totalItems">
+      <img src="assets/arrow-right.svg" alt="Next" />
+    </button>
+  </div>
+</div>

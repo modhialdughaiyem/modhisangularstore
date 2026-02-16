@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Apple Watch Series 4",
+    "price": 120,
+    "rating": 4,
+    "reviews": 131,
+    "images": ["assets/apple-watch.png"],
+    "currentImageIndex": 0,
+    "isFavorite": true
+  },
+  {
+    "id": 2,
+    "name": "Air-Max-270",
+    "price": 60,
+    "rating": 4,
+    "reviews": 64,
+    "images": ["assets/apple-watch.png"],
+    "currentImageIndex": 0,
+    "isFavorite": false
+  },
+  {
+    "id": 3,
+    "name": "Minimal Chair Tool",
+    "price": 24.59,
+    "rating": 5,
+    "reviews": 63,
+    "images": ["assets/apple-watch.png"],
+    "currentImageIndex": 0,
+    "isFavorite": false
+  },
+  {
+    "id": 4,
+    "name": "Amazfit Vip",
+    "price": 78.25,
+    "rating": 4.5,
+    "reviews": 98,
+    "images": ["assets/apple-watch.png"],
+    "currentImageIndex": 0,
+    "isFavorite": false
+  },
+  {
+    "id": 5,
+    "name": "Gumbo Mouse",
+    "price": 23.43,
+    "rating": 4,
+    "reviews": 45,
+    "images": ["assets/apple-watch.png"],
+    "currentImageIndex": 0,
+    "isFavorite": false
+  },
+  {
+    "id": 6,
+    "name": "Camera Tripod",
+    "price": 58,
+    "rating": 4.5,
+    "reviews": 72,
+    "images": ["assets/apple-watch.png"],
+    "currentImageIndex": 0,
+    "isFavorite": true
+  }
+]

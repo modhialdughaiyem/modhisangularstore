@@ -1,0 +1,18 @@
+<section class="chart-section">
+  <div class="section-header">
+    <h2 class="section-title">Sales Details</h2>
+    <select class="month-select" [ngModel]="selectedMonth" (ngModelChange)="onMonthChange($event)">
+      @for (month of months; track month) {
+        <option [value]="month">{{ month }}</option>
+      }
+    </select>
+  </div>
+  <div class="chart-wrapper">
+    <canvas
+      baseChart
+      type="line"
+      [data]="lineChartData"
+      [options]="lineChartOptions"
+    ></canvas>
+  </div>
+</section>

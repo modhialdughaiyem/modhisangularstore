@@ -1,0 +1,97 @@
+{
+  "metrics": [
+    {
+      "id": "metric-1",
+      "name": "Total User",
+      "value": 40689,
+      "change": 8.5,
+      "changeType": "increase",
+      "changeLabel": "Up from yesterday",
+      "category": "users"
+    },
+    {
+      "id": "metric-2",
+      "name": "Total Order",
+      "value": 10293,
+      "change": 1.3,
+      "changeType": "increase",
+      "changeLabel": "Up from past week",
+      "category": "orders"
+    },
+    {
+      "id": "metric-3",
+      "name": "Total Sales",
+      "value": 89000,
+      "change": 4.3,
+      "changeType": "decrease",
+      "changeLabel": "Down from yesterday",
+      "category": "sales",
+      "prefix": "$"
+    },
+    {
+      "id": "metric-4",
+      "name": "Total Pending",
+      "value": 2040,
+      "change": 1.8,
+      "changeType": "increase",
+      "changeLabel": "Up from yesterday",
+      "category": "pending"
+    }
+  ],
+  "chartData": {
+    "labels": ["5k", "10k", "15k", "20k", "25k", "30k", "35k", "40k", "45k", "50k", "55k", "60k"],
+    "dataPoints": [20, 35, 45, 30, 50, 80, 42, 55, 48, 62, 58, 70]
+  },
+  "salesData": [
+    {
+      "id": "1",
+      "product": "Apple Watch",
+      "productIcon": "watch",
+      "location": "6096 Marjolaine Landing",
+      "dateTime": "12.09.2019 - 12.53 PM",
+      "piece": 423,
+      "revenue": 34295,
+      "status": "Delivered"
+    },
+    {
+      "id": "2",
+      "product": "Samsung Galaxy",
+      "productIcon": "phone",
+      "location": "2715 Ash Dr. San Jose",
+      "dateTime": "01.02.2020 - 03.45 PM",
+      "piece": 312,
+      "revenue": 28750,
+      "status": "Pending"
+    },
+    {
+      "id": "3",
+      "product": "MacBook Pro",
+      "productIcon": "laptop",
+      "location": "8502 Preston Rd. Inglewood",
+      "dateTime": "15.03.2020 - 10.20 AM",
+      "piece": 156,
+      "revenue": 45200,
+      "status": "Rejected"
+    },
+    {
+      "id": "4",
+      "product": "AirPods Pro",
+      "productIcon": "headphones",
+      "location": "3517 W. Gray St. Utica",
+      "dateTime": "22.04.2020 - 02.15 PM",
+      "piece": 589,
+      "revenue": 12400,
+      "status": "Delivered"
+    },
+    {
+      "id": "5",
+      "product": "iPad Mini",
+      "productIcon": "tablet",
+      "location": "4517 Washington Ave.",
+      "dateTime": "08.05.2020 - 11.30 AM",
+      "piece": 245,
+      "revenue": 21300,
+      "status": "Pending"
+    }
+  ]
+}

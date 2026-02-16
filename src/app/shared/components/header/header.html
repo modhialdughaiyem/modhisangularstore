@@ -1,0 +1,31 @@
+<header class="top-header">
+  <button class="hamburger-btn" (click)="onToggleSidebar()" aria-label="Toggle sidebar">
+    <img src="assets/menu.svg" alt="Menu" />
+  </button>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search" class="search-input" />
+  </div>
+
+  <div class="header-actions">
+    <button class="header-icon-btn notification-btn" aria-label="Notifications">
+      <img src="assets/notification.svg" alt="Notifications" />
+      <span class="notification-badge">6</span>
+    </button>
+
+    <div class="language-selector">
+      <img src="assets/flag.svg" alt="English" class="flag-icon" />
+      <span class="lang-text">English</span>
+    </div>
+
+    <div class="user-profile">
+      <div class="user-avatar">
+        <img src="assets/avatar.svg" alt="User Avatar" />
+      </div>
+      <div class="user-info">
+        <span class="user-name">Modhi</span>
+        <span class="user-role">Admin</span>
+      </div>
+    </div>
+  </div>
+</header>

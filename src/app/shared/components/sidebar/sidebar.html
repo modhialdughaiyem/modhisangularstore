@@ -1,0 +1,82 @@
+<aside class="sidebar" [class.open]="isOpen">
+  <div class="sidebar-header">
+    <span class="logo">Dash<strong>Stack</strong></span>
+    <button class="menu-toggle" (click)="onToggle()" aria-label="Toggle menu">☰</button>
+  </div>
+
+  <nav class="sidebar-nav">
+    <div class="nav-section">
+      <a routerLink="/dashboard" routerLinkActive="active" class="nav-item" (click)="onNavClick()">
+        <img src="assets/dashboard.svg" alt="Dashboard" class="nav-icon" />
+        <span class="nav-label">Dashboard</span>
+      </a>
+      <a routerLink="/products" routerLinkActive="active" class="nav-item" (click)="onNavClick()">
+        <img src="assets/products.svg" alt="Products" class="nav-icon" />
+        <span class="nav-label">Products</span>
+      </a>
+      <a routerLink="/favorites" routerLinkActive="active" class="nav-item" (click)="onNavClick()">
+        <img src="assets/favorites.svg" alt="Favorites" class="nav-icon" />
+        <span class="nav-label">Favorites</span>
+      </a>
+      <a routerLink="/inbox" routerLinkActive="active" class="nav-item" (click)="onNavClick()">
+        <img src="assets/inbox.svg" alt="Inbox" class="nav-icon" />
+        <span class="nav-label">Inbox</span>
+      </a>
+      <a routerLink="/order-lists" routerLinkActive="active" class="nav-item" (click)="onNavClick()">
+        <img src="assets/orders.svg" alt="Order Lists" class="nav-icon" />
+        <span class="nav-label">Order Lists</span>
+      </a>
+      <a routerLink="/product-stock" routerLinkActive="active" class="nav-item" (click)="onNavClick()">
+        <img src="assets/product-stock.svg" alt="Product Stock" class="nav-icon" />
+        <span class="nav-label">Product Stock</span>
+      </a>
+    </div>
+
+    <div class="nav-section">
+      <div class="section-title">PAGES</div>
+      <a routerLink="/pricing" routerLinkActive="active" class="nav-item" (click)="onNavClick()">
+        <img src="assets/pricing.svg" alt="Pricing" class="nav-icon" />
+        <span class="nav-label">Pricing</span>
+      </a>
+      <a routerLink="/calendar" routerLinkActive="active" class="nav-item" (click)="onNavClick()">
+        <img src="assets/calendar.svg" alt="Calendar" class="nav-icon" />
+        <span class="nav-label">Calender</span>
+      </a>
+      <a routerLink="/todo" routerLinkActive="active" class="nav-item" (click)="onNavClick()">
+        <img src="assets/todo.svg" alt="To-Do" class="nav-icon" />
+        <span class="nav-label">To-Do</span>
+      </a>
+      <a routerLink="/contact" routerLinkActive="active" class="nav-item" (click)="onNavClick()">
+        <img src="assets/contact.svg" alt="Contact" class="nav-icon" />
+        <span class="nav-label">Contact</span>
+      </a>
+      <a routerLink="/invoice" routerLinkActive="active" class="nav-item" (click)="onNavClick()">
+        <img src="assets/invoice.svg" alt="Invoice" class="nav-icon" />
+        <span class="nav-label">Invoice</span>
+      </a>
+      <a routerLink="/ui-elements" routerLinkActive="active" class="nav-item" (click)="onNavClick()">
+        <img src="assets/ui-elements.svg" alt="UI Elements" class="nav-icon" />
+        <span class="nav-label">UI Elements</span>
+      </a>
+      <a routerLink="/team" routerLinkActive="active" class="nav-item" (click)="onNavClick()">
+        <img src="assets/team.svg" alt="Team" class="nav-icon" />
+        <span class="nav-label">Team</span>
+      </a>
+      <a routerLink="/table" routerLinkActive="active" class="nav-item" (click)="onNavClick()">
+        <img src="assets/table.svg" alt="Table" class="nav-icon" />
+        <span class="nav-label">Table</span>
+      </a>
+    </div>
+
+    <div class="nav-section">
+      <a routerLink="/settings" routerLinkActive="active" class="nav-item" (click)="onNavClick()">
+        <img src="assets/settings.svg" alt="Settings" class="nav-icon" />
+        <span class="nav-label">Settings</span>
+      </a>
+      <a routerLink="/logout" routerLinkActive="active" class="nav-item nav-logout" (click)="onNavClick()">
+        <img src="assets/logout.svg" alt="Logout" class="nav-icon" />
+        <span class="nav-label">Logout</span>
+      </a>
+    </div>
+  </nav>
+</aside>

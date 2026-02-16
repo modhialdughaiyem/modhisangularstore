@@ -1,0 +1,15 @@
+<div class="member-card">
+  <div class="avatar">
+    @if (member.image) {
+      <img [src]="member.image" [alt]="member.name" class="avatar-image" />
+    } @else {
+      <div class="avatar-placeholder" [style.background]="member.avatarColor">
+        <img src="assets/avatar.svg" alt="Avatar Placeholder" class="avatar-icon" />
+        <span class="avatar-initials">{{ member.initials }}</span>
+      </div>
+    }
+  </div>
+  <h3 class="member-name">{{ member.name }}</h3>
+  <p class="member-role">{{ member.role }}</p>
+  <p class="member-email">{{ member.email }}</p>
+</div>

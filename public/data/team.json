@@ -1,0 +1,14 @@
+[
+  { "name": "Jason Price", "role": "Admin", "email": "janick_parisian@yahoo.com", "avatarColor": "#6366f1", "initials": "JP", "image": "assets/team/member-1.png" },
+  { "name": "Jukkoe Sisao", "role": "CEO", "email": "sibyl_kozey@gmail.com", "avatarColor": "#10b981", "initials": "JS", "image": "assets/team/member-2.png" },
+  { "name": "Harriet King", "role": "CTO", "email": "nadia_block@hotmail.com", "avatarColor": "#f59e0b", "initials": "HK", "image": "assets/team/member-3.png" },
+  { "name": "Lenora Benson", "role": "Lead", "email": "feil.wallace@kunde.us", "avatarColor": "#3b82f6", "initials": "LB", "image": "assets/team/member-4.png" },
+  { "name": "Olivia Reese", "role": "Strategist", "email": "kemmer.hattie@cremin.us", "avatarColor": "#ec4899", "initials": "OR", "image": "assets/team/member-5.png" },
+  { "name": "Bertha Valdez", "role": "CEO", "email": "loraine.koelpin@tromp.io", "avatarColor": "#8b5cf6", "initials": "BV", "image": "assets/team/member-6.png" },
+  { "name": "Harriett Payne", "role": "Digital Marketer", "email": "nannie_west@estrella.tv", "avatarColor": "#14b8a6", "initials": "HP", "image": "assets/team/member-7.png" },
+  { "name": "George Bryant", "role": "Social Media", "email": "delmer.kling@gmail.com", "avatarColor": "#f97316", "initials": "GB", "image": "assets/team/member-8.png" },
+  { "name": "Lily French", "role": "Strategist", "email": "lucienne.herman@hotmail.com", "avatarColor": "#06b6d4", "initials": "LF", "image": "assets/team/member-9.png" },
+  { "name": "Howard Adkins", "role": "CEO", "email": "wiegand.leonor@herman.us", "avatarColor": "#84cc16", "initials": "HA", "image": "assets/team/member-10.png" },
+  { "name": "Earl Bowman", "role": "Digital Marketer", "email": "waino_altenwerth@nicolette.tv", "avatarColor": "#e11d48", "initials": "EB", "image": "assets/team/member-11.png" },
+  { "name": "Patrick Padilla", "role": "Social Media", "email": "octavia.nienow@gleichner.net", "avatarColor": "#7c3aed", "initials": "PP", "image": "assets/team/member-12.png" }
+]
