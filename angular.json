@@ -65,10 +65,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "my-app-name:build:production"
+              "buildTarget": "modhis-store:build:production"
             },
             "development": {
-              "buildTarget": "my-app-name:build:development"
+              "buildTarget": "modhis-store:build:development"
             }
           },
           "defaultConfiguration": "development"
